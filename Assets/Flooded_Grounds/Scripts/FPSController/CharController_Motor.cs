@@ -14,16 +14,17 @@ public class CharController_Motor : MonoBehaviour {
 	public bool webGLRightClickRotation = true;
 	float gravity = -9.8f;
 
-
 	void Start(){
 		//LockCursor ();
+		Cursor.visible = false;
+		Cursor.lockState = CursorLockMode.Locked;
+		
 		character = GetComponent<CharacterController> ();
 		if (Application.isEditor) {
 			webGLRightClickRotation = false;
 			sensitivity = sensitivity * 1.5f;
 		}
 	}
-
 
 	void CheckForWaterHeight(){
 		if (transform.position.y < WaterHeight) {
@@ -33,9 +34,9 @@ public class CharController_Motor : MonoBehaviour {
 		}
 	}
 
+	void Update()
+	{
 
-
-	void Update(){
 		moveFB = Input.GetAxis ("Horizontal") * speed;
 		moveLR = Input.GetAxis ("Vertical") * speed;
 
@@ -47,10 +48,7 @@ public class CharController_Motor : MonoBehaviour {
 
 		CheckForWaterHeight ();
 
-
 		Vector3 movement = new Vector3 (moveFB, gravity, moveLR);
-
-
 
 		if (webGLRightClickRotation) {
 			if (Input.GetKey (KeyCode.Mouse0)) {
@@ -64,13 +62,10 @@ public class CharController_Motor : MonoBehaviour {
 		character.Move (movement * Time.deltaTime);
 	}
 
-
-	void CameraRotation(GameObject cam, float rotX, float rotY){		
+	void CameraRotation(GameObject cam, float rotX, float rotY)
+	{		
 		transform.Rotate (0, rotX * Time.deltaTime, 0);
 		cam.transform.Rotate (-rotY * Time.deltaTime, 0, 0);
 	}
-
-
-
 
 }
