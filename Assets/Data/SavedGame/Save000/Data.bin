@@ -1,0 +1,80 @@
+{
+  "id": "53721d538ada429bb1a9b0094dacf0fa",
+  "playerData": {
+    "position": {
+      "x": 503.762024,
+      "y": 17.7673454,
+      "z": 512.685852
+    },
+    "rotation": {
+      "x": 128.764282,
+      "y": -0.5554352
+    },
+    "localData": {
+      "health": 100,
+      "selectedItem": -1,
+      "playerItems": {
+        "playerItem_0": {
+          "recordingTime": 0,
+          "batteryEnergy": 0.0,
+          "nightVision": false
+        },
+        "playerItem_1": {},
+        "playerItem_2": {},
+        "playerItem_3": {
+          "flashlightAttached": false
+        },
+        "playerItem_4": {
+          "batteryEnergy": 0.0
+        },
+        "playerItem_5": {
+          "currentFuel": 0.0
+        },
+        "playerItem_6": {},
+        "playerItem_7": {},
+        "playerItem_8": {
+          "baseTemp": 0.0
+        },
+        "playerItem_9": {}
+      }
+    },
+    "globalData": {
+      "inventory": {
+        "expanded": 0,
+        "items": {
+          "item_0": {
+            "item": "9c45e9931ae9492dba1cf41854f95de0",
+            "quantity": 4,
+            "orientation": 0,
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "customData": {}
+          }
+        },
+        "shortcuts": {
+          "shortcut_0": "{}",
+          "shortcut_1": "{}",
+          "shortcut_2": "{}",
+          "shortcut_3": "{}"
+        }
+      },
+      "objectives": {
+        "WayOut": {
+          "isCompleted": false,
+          "subObjectives": {
+            "WayOut": {
+              "completeCount": 0,
+              "isCompleted": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "worldState": {
+    "worldSaveables": {},
+    "runtimeSaveables": {}
+  }
+}
