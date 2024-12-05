@@ -20,7 +20,7 @@ namespace UHFPS.Runtime
     [Docs("https://docs.twgamesdev.com/uhfps/guides/game-manager")]
     public class GameManager : Singleton<GameManager>
     {
-        public enum PanelType { GamePanel, PausePanel, DeadPanel, MainPanel, InventoryPanel, MapPanel }
+        public enum PanelType { GamePanel, PausePanel, DeadPanel, MainPanel, InventoryPanel, MapPanel}
 
         [Serializable]
         public struct GraphicReference
@@ -54,6 +54,7 @@ namespace UHFPS.Runtime
         public CanvasGroup GamePanel;
         public CanvasGroup PausePanel;
         public CanvasGroup DeadPanel;
+
 
         // Sub Panels
         public CanvasGroup HUDPanel;
